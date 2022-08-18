@@ -27,14 +27,26 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Cashy"),
+              title: Text("Cashyy"),
               backgroundColor: Colors.blue,
               actions: <Widget>[
                 IconButton(icon: Icon(Icons.mail), onPressed: () {})
               ],
             ),
             body: SafeArea(
-              child: Text("Flutter Pertama"),
+              child: Container(
+                child: Column(
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('assets/images/ic_money.png'),
+                      height: 290,
+                    ),
+                    Text("Rich Together"),
+                    Text(
+                        "Save your money little bit and we will help to be reach")
+                  ],
+                ),
+              ),
             )));
   }
 }
